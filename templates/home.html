@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment_analysier</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysier</h1>
+
+        <form action="/prediction" method="post">  
+            <input type="text" name="review" placeholder="Enter your review">
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
